@@ -8,5 +8,16 @@ services:
     volumes:
       - mongo_data:/data/db
 
+  backend:
+    build: ./backend
+    container_name: nestjs_api
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/mydatabase
+
 volumes:
   mongo_data:
