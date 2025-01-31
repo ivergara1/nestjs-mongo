@@ -23,8 +23,8 @@ El proyecto está dividido en dos servicios principales:
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/ivergara1/nestjs-mongo.git)
-   cd nombre-del-repo
+   git clone https://github.com/ivergara1/nestjs-mongo.git
+   cd nestjs-mongo
    ```
 2. **Construir las imágenes y levantar los contenedores con docker-compose**
 
